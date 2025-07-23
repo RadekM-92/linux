@@ -1,0 +1,66 @@
+311
+179:root         626  0.0  0.2  56252 11776 ?        Ss   08:23   0:00 /usr/bin/VGAuthService
+180:root         632  0.1  0.2 246192  9088 ?        Ssl  08:23   0:00 /usr/bin/vmtoolsd
+190:root         775  0.0  0.5  43732 21632 ?        Ss   08:23   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+205:root        1065  0.0  0.5 120704 23552 ?        Ssl  08:23   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+213:radek       1166  0.0  0.1  42104  6656 ?        S<sl 08:23   0:00 /usr/bin/pipewire
+214:radek       1167  0.0  0.1  25992  6656 ?        Ssl  08:23   0:00 /usr/bin/pipewire-media-session
+215:radek       1168  0.2  0.6 1424936 26928 ?       S<sl 08:23   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+216:radek       1169  0.5  0.2  39136 11648 ?        Ss   08:23   0:02 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+218:radek       1182  0.0  0.1 390896  7196 ?        Sl   08:23   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+219:radek       1198  0.0  0.1 164924  6016 tty2     Ssl+ 08:23   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+220:radek       1204  0.2  0.2  13528  9344 ?        Ss   08:23   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+232:radek       1344  4.8  6.6 4411664 262196 ?      Rsl  08:23   0:19 /usr/bin/gnome-shell
+233:radek       1353  0.0  0.1   8432  4480 ?        S    08:23   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+246:radek       1537  0.2  0.7 428180 28052 ?        Sl   08:23   0:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+251:radek       1589  0.0  0.7 2602036 27916 ?       Sl   08:24   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+252:radek       1596  0.0  0.0   2892  1536 ?        Ss   08:24   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+254:radek       1600  0.2  0.3 318004 12288 ?        Sl   08:24   0:00 /usr/bin/ibus-daemon --panel disable
+273:radek       1716  0.2  0.9 142696 37616 ?        Sl   08:24   0:00 /usr/bin/vmtoolsd -n vmusr --blockFd 3 --uinputFd 4
+275:radek       1781  2.6  4.6 978140 185640 ?       Sl   08:24   0:10 /snap/snap-store/1216/usr/bin/snap-store --gapplication-service
+277:radek       1814  0.2  2.0 226268 79696 ?        S    08:24   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.6CO692 -listen 4 -listen 5 -displayfd 6 -initfd 7
+281:radek       1873  0.0  0.7 2601976 27944 ?       Sl   08:24   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+294:radek       3283  0.0  0.1   8108  5760 ?        S    08:25   0:00 /usr/bin/ssh-agent -D -a /run/user/1000/keyring/.ssh
+295:root        3306  0.0  0.0   2892  1664 ?        Ss   08:26   0:00 /bin/sh /usr/lib/apt/apt.systemd.daily install
+296:root        3310  0.0  0.0   2892  1664 ?        S    08:26   0:00 /bin/sh /usr/lib/apt/apt.systemd.daily lock_is_held install
+297:root        3344 10.3  3.5 316796 141680 ?       Sl   08:26   0:22 /usr/bin/python3 /usr/bin/unattended-upgrade
+298:root        3421  1.3  2.9 317680 118748 ?       S    08:29   0:00 /usr/bin/python3 /usr/bin/unattended-upgrade
+299:radek       3488  4.0  1.4 633096 56796 ?        Sl   08:29   0:01 /usr/bin/gedit --gapplication-service
+302:root        3581  0.2  0.2  19308  8272 pts/1    Ss+  08:30   0:00 /usr/bin/dpkg --status-fd 11 --configure --pending
+304:root        3600  0.0  0.0   2892  1536 pts/1    S+   08:30   0:00 /bin/sh /var/lib/dpkg/info/linux-image-6.8.0-64-generic.postinst triggered linux-update-6.8.0-64-generic
+307:root        3603  0.0  0.0   2892  1536 pts/1    S+   08:30   0:00 /bin/sh -e /etc/kernel/postinst.d/initramfs-tools 6.8.0-64-generic /boot/vmlinuz-6.8.0-64-generic
+308:root        3605  0.0  0.0   2892  1792 pts/1    S+   08:30   0:00 /bin/sh /usr/sbin/update-initramfs -c -k 6.8.0-64-generic -b /boot
+309:root        3607  0.3  0.0   3024  1920 pts/1    S+   08:30   0:00 /bin/sh /usr/sbin/mkinitramfs -o /boot/initrd.img-6.8.0-64-generic.new 6.8.0-64-generic
+310:root        5670  0.0  0.0   3024  1044 pts/1    S+   08:30   0:00 /bin/sh /usr/sbin/mkinitramfs -o /boot/initrd.img-6.8.0-64-generic.new 6.8.0-64-generic
+ 2012  mkdir workspace
+ 2013  ls
+ 2014  cd workspace/
+ 2015  touch processes.txt
+ 2016  ps aux > processes.txt 
+ 2017  less processes.txt 
+ 2018  cp processes.txt copy.txt
+ 2019  less copy.txt 
+ 2020  man cat
+ 2021  cat processes.txt -n
+ 2022  man ca
+ 2023  man cat
+ 2024  cat processes.txt
+ 2025  cat processes.txt -n
+ 2026  man less
+ 2027  wc processes.txt 
+ 2028  wc processes.txt  -l
+ 2029  mkdir backup
+ 2030  mv copy.txt backup/
+ 2031  ls
+ 2032  ls backup/
+ 2033  wc -l < processes.txt 
+ 2034  wc -l < processes.txt > selected.txt
+ 2035  cat selected.txt 
+ 2036  grep -rni "/bin" processes.txt 
+ 2037  grep -rni "/bin" processes.txt >> selected.txt 
+ 2038  less selected.txt 
+ 2039  history 
+ 2040  history | tail
+ 2041  history | tail -n28
+ 2042  history | tail -n32
+ 2043  history | tail -n32 > commands.txt
